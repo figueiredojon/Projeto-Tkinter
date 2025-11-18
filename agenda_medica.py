@@ -76,8 +76,20 @@ def add_medico():
     m_esp.delete(0, tk.END)
     atualizar_medicos()
 
+def help():
+    messagebox.showinfo(
+        title="Informação do Projeto",
+        message=("Desenvolvido por: Eduardo Ramos, Danilo Cavalcante, Jonatas Figueiredo. "
+                    "Este projeto é um CRUD básico para uma clínica médica, "
+                    "desenvolvido usando SQLite e Tkinter."                
+                 )
+    )
+
 btn_add_m = tk.Button(frm_med, text="Salvar Médico", command=add_medico)
 btn_add_m.pack(pady=5)
+
+help = tk.Button(frm_med, text="Ajuda", command=help)
+help.pack(pady=5)
 
 frm_pac = ttk.Frame(abas)
 abas.add(frm_pac, text="Pacientes")
