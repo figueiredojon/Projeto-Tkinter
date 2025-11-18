@@ -80,7 +80,7 @@ def help():
     messagebox.showinfo(
         title="Agenda Médica",
         message=("Desenvolvido por: Eduardo Ramos, Danilo Cavalcante, Jonatas Figueiredo. "
-                    "Este projeto é um CRUD básico para uma clínica médica, "
+                    "Este projeto é um cadastro básico para uma clínica médica, "
                     "desenvolvido usando SQLite e Tkinter."                
                  )
     )
@@ -200,4 +200,5 @@ atualizar_consultas()
 
 root.mainloop()
 con.close()
+
 
